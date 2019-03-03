@@ -1,0 +1,37 @@
+﻿<html>
+    <head>
+        <title>PApiTester</title>
+    </head>
+    <body style="min-width: 600px;">
+        PApiTester
+        <hr/>
+        <form>
+            <div>[取得条件]</div>
+            <textarea id="columnFilterHash" placeholder="{
+ &quot;ClassA&quot;: &quot;hoge&quot;,
+ &quot;ClassB&quot;: &quot;huga&quot;
+}" rows="5" cols="80">
+</textarea>
+            <hr/>
+            <div>[ソート条件]</div>
+            <textarea id="columnSorterHash" placeholder="{
+ &quot;Title&quot;: &quot;asc&quot;,
+ &quot;ColumnA&quot;: &quot;desc&quot;
+}" rows="5" cols="80"></textarea>
+            <hr/>
+            <input type="button" id="postButton" value="送信" />
+        </form>
+        <hr/>
+        <div>[URL]</div>
+        <div id="urlView">url表示欄</div>
+        <hr/>
+        <div>[送信データ]</div>
+        <div id="postDataView">postデータ表示欄</div>
+        <hr/>
+        <div>[受信データ]</div>
+        <div id="resultView">responseデータ表示欄</div>
+        <hr/>
+
+        <script src="content_scripts_common.js"></script>
+    </body>
+</html>
